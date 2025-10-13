@@ -2,6 +2,8 @@
 
 
 # Hamburgueria
-Site One-Page de uma Hamburgueria para Divulgação do Projeto do SENAC
+Site One-Page de uma Hamburgueria para Oferecer hambúrgueres artesanais com ingredientes frescos e de alta qualidade, proporcionando uma experiência saborosa e descontraída a cada cliente. Divulgação do Projeto do SENAC
+
+
 # Autor
 Ricardin
