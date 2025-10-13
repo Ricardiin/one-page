@@ -2,6 +2,6 @@
 
 
 # Cinema
-Site one page de Cinema para Divulgação do Projeto
+Site One-Page de Cinema para Divulgação do Projeto
 # Autor
 Ricardin
