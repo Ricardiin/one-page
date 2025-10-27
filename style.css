@@ -65,8 +65,8 @@ nav ul {
     position: fixed;
     top: 60px;
     background-color: rgba(0,0,0, 0.9);
-    width: 50%;
-    right: -50%; /*ajustar com width */
+    width: 30%;
+    right: -30%; /*ajustar com width */
     transition: all 0.7s;
 }
 
@@ -93,8 +93,8 @@ nav ul li a {
 @media (min-width: 576px) {
     /* Cabeçalho */
     nav ul {
-        width: 50%;
-        right: -50%;
+        width: 30%;
+        right: -30%;
     }
 }
 /*FIM DO Smartphone lanscape*/
@@ -127,7 +127,7 @@ nav ul li a {
     }
 
     .logo img {
-        width:194px;
+        width: 194px;
         height: 194px;
     }
 
@@ -148,7 +148,7 @@ nav ul li a {
     }
 
     nav ul li a:hover {
-        color: var(--azulMedio);
+        color: #3498db;
     }
 
 }
