@@ -65,8 +65,8 @@ nav ul {
     position: fixed;
     top: 60px;
     background-color: rgba(0,0,0, 0.9);
-    width: 30%;
-    right: -30%; /*ajustar com width */
+    width: 50%;
+    right: -50%; /*ajustar com width */
     transition: all 0.7s;
 }
 
@@ -93,8 +93,8 @@ nav ul li a {
 @media (min-width: 576px) {
     /* Cabeçalho */
     nav ul {
-        width: 30px;
-        right: -30px;
+        width: 50%;
+        right: -50%;
     }
 }
 /*FIM DO Smartphone lanscape*/
