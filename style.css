@@ -25,19 +25,77 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
+.container {
+    display: flex;
+}
+
+.layout {
+    margin: 0;
+}
 /* FIMM - LAYOUT << */
 
 
-/*Smartphone portrait*/
+/*Smartphone portrait >>>>>>>>>>>>>*/
+/*Cabeçalho */
+header {
+    height: 65px;
+    background-color: var(--pao);
+}
+
+.logo img {
+    width: 128px;
+    height: 128px;
+}
+
+#check {
+    display: none; /*esconder um elemento*/
+}
+
+label {
+    font-size: 3rem;
+    color:rgba(156,220,254, 0.75);
+    position: fixed;
+    top:5px;
+    right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(0,0,0, 0.9);
+    width: 30%;
+    right: -30%; /*ajustar com width */
+    transition: all 0.7s;
+}
+
+/* Ação para a caixa check */
+/* Quando selecionada mudar ul */
+#check:checked~ul{
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--marrom);
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--branco);
+}
+/*FIM DO SMARTPHONE PORTRAIT <<<<<<<*/
 
 
-/*FIM DO SMARTPHONE PORTRAIT */
-
-
-/*Smartphone lanscape*/
+/*Smartphone landscape*/
 @media (min-width: 576px) {
-
-
+    /* Cabeçalho */
+    nav ul {
+        width: 30px;
+        right: -30px;
+    }
 }
 /*FIM DO Smartphone lanscape*/
 
@@ -63,6 +121,35 @@ body{
 
 /* Notebook / PC - HD */
 @media (min-width: 1200px) {
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }
+
+    .logo img {
+        width:194px;
+        height: 194px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a:hover {
+        color: var(--azulMedio);
+    }
 
 }
 /* FIM Notebook / PC - HD */
