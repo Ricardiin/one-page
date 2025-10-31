@@ -3,7 +3,7 @@
     @author 
 */
 
-/* Layout >>>>>>>> */
+/* Layout __________ */
 
 /* Variaveis */
 :root{
@@ -27,25 +27,37 @@ body{
 
 .container {
     display: flex;
+    margin: 0 auto;
 }
 
 .layout {
     margin: 0;
 }
-/* FIMM - LAYOUT << */
+/* Botão */
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--pao);
+    padding: 10px 40px;
+    color: var(--Branco);
+    border-radius: 20px;
+    border: 0.5px solid var(--Branco);
+}
+/* FIMM - LAYOUT _______________ */
 
 
-/*Smartphone portrait >>>>>>>>>>>>>*/
+/*Smartphone portrait ___________*/
 /*Cabeçalho */
 header {
     height: 65px;
     background-color: var(--pao);
 }
 
-.logo img {
+/*.logo img {
     width: 128px;
     height: 128px;
-}
+} */ 
 
 #check {
     display: none; /*esconder um elemento*/
@@ -86,41 +98,120 @@ nav ul li a {
     text-decoration: none;
     color: var(--branco);
 }
-/*FIM DO SMARTPHONE PORTRAIT <<<<<<<*/
 
 
-/*Smartphone landscape*/
+/* Principal */
+main {
+    height: 50vh;
+    background: url('./img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--Branco);
+    font-family: "Koulen", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: #2e1a47 2px 2px 4px;
+}
+
+main h2 {
+    color: var(--Branco);
+    font-family: "Koulen", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: #2e1a47 2px 2px 4px;
+    margin-bottom: 30px;
+}
+/*FIM DO SMARTPHONE PORTRAIT ________*/
+
+
+/*Smartphone landscape _____________*/
 @media (min-width: 576px) {
-    /* Cabeçalho */
+/*     Cabeçalho 
     nav ul {
         width: 30%;
         right: -30%;
-    }
+    }*/
 }
-/*FIM DO Smartphone lanscape*/
+
+ /* Layout */
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    nav ul {
+        width: 40%;
+        /* Ajustar com Width */
+        right: -40%;
+    }
+    /* Principal */
+    main{
+        height: 70vh;
+    }
+    main h1{
+        font-size: 4rem;
+    }
+    main h2{
+        font-size: 2rem;
+    }
+
+/*FIM DO Smartphone landscape___________*/
 
 
-/*Tablet portrait*/
+/*Tablet portrait_______________*/
 @media (min-width: 768px) {
 
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+        /* Principal */
+    main{
+        height: 50vh;
+    }
+    main h1{
+        font-size: 5rem;
+    }
+    main h2{
+        font-size: 3rem;
+    }
 
 }
-/*fim Tablet portrait*/
 
-/* Tablet landscape */
+/*fim Tablet portrait_________*/
+
+/* Tablet landscape___________*/
 @media (min-width: 992px) {
 
-
+  /* Layout */
+    .container {
+        max-width: 960px;
+    }
+    /* Principal */
+    main{
+        height: 50vh;
+    }
 }
-/* FIM Tablet landscape */
 
+/* FIM Tablet landscape__________*/
 
-/*Smartphone lanscape*/
-
-/*FIM Smartphone lanscape*/
-
-/* Notebook / PC - HD */
+/* Notebook / PC - HD ___________*/
 @media (min-width: 1200px) {
+     /* Layout */
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+    }
     /* Cabeçalho */
     header {
         height: 120px;
@@ -140,6 +231,7 @@ nav ul li a {
         width: 100%;
         height: auto;
         background-color: transparent;
+        margin-top: 50px; /* adc*/
     }
 
     nav ul li {
@@ -150,13 +242,28 @@ nav ul li a {
     nav ul li a:hover {
         color: #3498db;
     }
-
+    main {
+        height: 50vh;
+    }
 }
 /* FIM Notebook / PC - HD */
 
 
 /* Notebook / PV / TV - Full HD ou 4k */
 @media (min-width: 1400px) {
+  /* Layout */
+    .container {
+        max-width: 1320px;
+    }
+    /*Principal */
+    main h1{
+        font-size: 6rem;
+    }
+    main h2{
+        font-size: 4rem;
+    }
+
+
 
 }
 /*FIM  Notebook / PV / TV - Full HD ou 4k */
