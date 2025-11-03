@@ -30,9 +30,6 @@ body{
     margin: 0 auto;
 }
 
-.layout {
-    margin: 0;
-}
 /* Botão */
 .btn {
     text-decoration: none;
@@ -42,7 +39,7 @@ body{
     padding: 10px 40px;
     color: var(--Branco);
     border-radius: 20px;
-    border: 0.5px solid var(--Branco);
+    border: 2.5px solid var(--Branco);
 }
 /* FIMM - LAYOUT _______________ */
 
@@ -54,10 +51,10 @@ header {
     background-color: var(--pao);
 }
 
-/*.logo img {
+.logo img {
     width: 128px;
     height: 128px;
-} */ 
+}  
 
 #check {
     display: none; /*esconder um elemento*/
@@ -65,7 +62,7 @@ header {
 
 label {
     font-size: 3rem;
-    color:rgba(156,220,254, 0.75);
+    color:rgba(225, 236, 241, 0.75);
     position: fixed;
     top:5px;
     right: 15px;
@@ -85,7 +82,7 @@ nav ul {
 /* Ação para a caixa check */
 /* Quando selecionada mudar ul */
 #check:checked~ul{
-    right: 0;
+    right: 0px;
 }
 
 nav ul li {
@@ -120,7 +117,7 @@ main h1 {
     font-family: "Koulen", sans-serif;
     font-weight: 500;
     font-size: 3rem;
-    text-shadow: #2e1a47 2px 2px 4px;
+    text-shadow: #a38034 2px 2px 4px;
 }
 
 main h2 {
@@ -128,8 +125,41 @@ main h2 {
     font-family: "Koulen", sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    text-shadow: #2e1a47 2px 2px 4px;
+    text-shadow: #a38034 2px 2px 4px;
     margin-bottom: 30px;
+}
+
+/* Destaque */
+#destaque {
+    padding: 50px 10px;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+.hero-text h2 {
+    font-size: 1.6rem;
+    color: var(--marrom);
+    margin: ;
+}
+
+.topic {
+    display: flex: ;
+    align-items: center;
+}
+.topic p {
+    margin-left: 15px;
 }
 /*FIM DO SMARTPHONE PORTRAIT ________*/
 
