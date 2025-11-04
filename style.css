@@ -300,9 +300,9 @@ main h2 {
         height: 89vh;
     }
     /* Destaque */
-    #destaque {
-        /* background-attachment: fixed; */
-    }
+    /*#destaque {
+         background-attachment: fixed; 
+    } */
 
     #hero img {
         width: 400px;
