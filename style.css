@@ -12,7 +12,8 @@
     --branco: #ffff;
     --pao: #F9A825;
     --marrom: #d2922e;
-    --preto: #0000;
+    --preto: #000000;
+    --dourado: #ffc90e;
 }
 
 /* CSS RESET */
@@ -38,13 +39,14 @@ body{
     background-color: var(--pao);
     padding: 10px 40px;
     color: var(--Branco);
-    border-radius: 20px;
+    border-radius: 25px;
     border: 2.5px solid var(--Branco);
 }
 /* FIMM - LAYOUT _______________ */
 
 
 /*Smartphone portrait ___________*/
+
 /*Cabeçalho */
 header {
     height: 65px;
@@ -73,9 +75,9 @@ nav ul {
     height: 100vh;
     position: fixed;
     top: 60px;
-    background-color: rgba(0,0,0, 0.9);
-    width: 30%;
-    right: -30%; /*ajustar com width */
+    background-color: rgba(34, 30, 16, 0.603);
+    width: 65%;
+    right: -65%; /*ajustar com width */
     transition: all 0.7s;
 }
 
@@ -100,7 +102,7 @@ nav ul li a {
 /* Principal */
 main {
     height: 50vh;
-    background: url('./img/banner.jpg');
+    background: url(img/banner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -113,29 +115,30 @@ main .container {
 }
 
 main h1 {
-    color: var(--Branco);
+    color: var( --Branco);
     font-family: "Koulen", sans-serif;
-    font-weight: 500;
-    font-size: 3rem;
-    text-shadow: #a38034 2px 2px 4px;
-}
+    text-shadow: 0px 5px 10px var(--pao), 2px 2px 4px,0px 10px 10px; 
+}   
 
 main h2 {
     color: var(--Branco);
-    font-family: "Koulen", sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    text-shadow: #a38034 2px 2px 4px;
+    font-size: 1.85rem;
+    font-weight: 900;
+    text-shadow: 0px 5px 10px var(--pao),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
 /* Destaque */
 #destaque {
     padding: 50px 10px;
+    background: url(./img/textura.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #destaque .container {
     flex-direction: column;
+
 }
 
 #hero {
@@ -143,21 +146,27 @@ main h2 {
 }
 
 #hero img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 25px;
 }
 
 .hero-text h2 {
     font-size: 1.6rem;
-    color: var(--marrom);
-    margin: ;
+    color: var(--dourado);
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: var(--preto);
 }
 
 .topic {
-    display: flex: ;
+    display: flex;
     align-items: center;
+    margin-top: 15px;
 }
+
 .topic p {
     margin-left: 15px;
 }
@@ -166,12 +175,6 @@ main h2 {
 
 /*Smartphone landscape _____________*/
 @media (min-width: 576px) {
-/*     Cabeçalho 
-    nav ul {
-        width: 30%;
-        right: -30%;
-    }*/
-}
 
  /* Layout */
     .container {
@@ -186,15 +189,39 @@ main h2 {
     }
     /* Principal */
     main{
-        height: 70vh;
+        height: 75vh;
     }
     main h1{
-        font-size: 4rem;
+        font-size: 2.75rem;
     }
     main h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+        /* Destaque */
+    #destaque {
+        padding: 50px 0px;
     }
 
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .topic {
+        display: none;
+    }
+
+}
 /*FIM DO Smartphone landscape___________*/
 
 
@@ -206,11 +233,8 @@ main h2 {
         max-width: 720px;
     }
         /* Principal */
-    main{
-        height: 50vh;
-    }
     main h1{
-        font-size: 5rem;
+        font-size: 3.9rem;
     }
     main h2{
         font-size: 3rem;
@@ -223,20 +247,18 @@ main h2 {
 /* Tablet landscape___________*/
 @media (min-width: 992px) {
 
-  /* Layout */
+    /* Layout */
     .container {
         max-width: 960px;
     }
-    /* Principal */
-    main{
-        height: 50vh;
-    }
+
 }
 
 /* FIM Tablet landscape__________*/
 
 /* Notebook / PC - HD ___________*/
 @media (min-width: 1200px) {
+
      /* Layout */
     .container {
         justify-content: space-between;
@@ -244,7 +266,7 @@ main h2 {
     }
     /* Cabeçalho */
     header {
-        height: 120px;
+        height: 100px;
     }
 
     .logo img {
@@ -261,7 +283,7 @@ main h2 {
         width: 100%;
         height: auto;
         background-color: transparent;
-        margin-top: 50px; /* adc*/
+        margin-top: 20px; /* adc*/
     }
 
     nav ul li {
@@ -270,11 +292,31 @@ main h2 {
     }
 
     nav ul li a:hover {
-        color: #3498db;
+        color: #000000;
     }
+
+    /* Principal*/
     main {
-        height: 50vh;
+        height: 89vh;
     }
+    /* Destaque */
+    #destaque {
+        /* background-attachment: fixed; */
+    }
+
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .topic {
+        display: flex;
+    }
+
 }
 /* FIM Notebook / PC - HD */
 
@@ -292,8 +334,5 @@ main h2 {
     main h2{
         font-size: 4rem;
     }
-
-
-
 }
 /*FIM  Notebook / PV / TV - Full HD ou 4k */
