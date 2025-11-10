@@ -1,8 +1,3 @@
-/**
-    folha de estilo do professor.com
-    @author 
-*/
-
 /* Layout __________ */
 
 /* Variaveis */
@@ -32,6 +27,23 @@ body {
     margin: 0 auto;
 }
 
+.Flex2 {
+    align-items: center;
+}
+
+.Flex,
+.Flex2,
+.Flex3,
+.Flex4,
+.Flex5,
+.Flex6 {
+    display: flex;
+}
+
+.Flex2 {
+    align-items: center;
+}
+
 /* Botão */
 .btn {
     text-decoration: none;
@@ -43,7 +55,34 @@ body {
     border-radius: 25px;
     border: 2.5px solid var(--Branco);
 }
+/* Cartoes aula 10-11*/
+.card {
+    width: 341px;
+    height: 520px;
+    /* background-color: var(--dourado); */
+    margin-top: 25px;
+    border: 2px solid var(--preto);
+    border-radius: 25px;
+}
+/* foto com canto arredondado*/
+.card img{
+    border-radius: 25px 25px 0px 0px;
+    
+}
 
+.card h2{
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+
+.card p{
+    color: var(--dourado);
+    text-align: left;
+    padding: 0px 10px 30px 10px;
+}
+.card h2{
+    color:white;
+}
 /* FIMM - LAYOUT _______________ */
 
 
@@ -218,6 +257,98 @@ main h2 {
     border: 0;
 }
 
+/* Seção Wireframe - alinhamento igual ao "Sobre nós" */
+#wireframe {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    padding: 80px 0;
+    background: url(img/wire.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+#wireframe .Container.Flex2 {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Texto */
+#textoWire {
+    flex: 1;
+    min-width: 300px;
+}
+
+#textoWire h2 {
+    color: var(--dourado);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#textoWire p {
+    color: var(--branco);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#textoWire .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--pao);
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    transition: 0.3s;
+}
+
+#textoWire .btn:hover {
+    background-color: #ffb300;
+}
+
+/* QR Code */
+#qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qrcode img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* card nome do meu card = produto*/
+#produto { 
+    padding: 50px 0px;
+}
+
+#produto .container{
+    flex-direction: column;
+
+}
+#produto a {
+    background-color: red;
+}
 /*FIM DO SMARTPHONE PORTRAIT ________*/
 
 
@@ -278,6 +409,11 @@ main h2 {
     }
 }
 
+    /* QR Code*/
+    /* QR Code */
+    #qrcode {
+    display: none;
+}
 /*FIM DO Smartphone landscape___________*/
 
 
@@ -380,11 +516,28 @@ main h2 {
 
     /* sobre */
 
-    #sobre.container{
+    #sobre.container {
         flex-direction: row;
         align-items: center;
     }
 
+    /* Wireframe */
+    #wireframe {
+        background-attachment: fixed;
+    }
+
+    #wireframe span {
+        display: inline;
+    }
+
+    #qrcode {
+        display: inline;
+    }
+
+    #qrcode img {
+        width: 225px;
+        height: 225px;
+    }
 
 
 }
