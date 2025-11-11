@@ -28,7 +28,7 @@
    .container {
       display: flex;
       margin: 0 auto;
-      /*Centralizar o layout e o conterner*/
+      /*Centralizar o layout e o container*/
    }
 
    /* Criar  Botão  */
@@ -174,7 +174,7 @@
 
    #destaque {
       padding: 50px 10px;
-      background: url(./img/burg.jpg);
+      background: url(./img/1.jpg);
       background-size: cover;
       background-position: center;
       /* Editei aki*/
@@ -265,7 +265,7 @@
 
    #cardapio {
       padding: 50px 10px;
-      background: url(./img/burg.jpg);
+      background: url(./img/1.jpg);
       background-size: cover;
       background-position: center;
       /* editei aki */
@@ -350,7 +350,7 @@
    address {
       /* Editiei aki tbm */ 
       padding: 50px 10px;
-      background: url(./img/burg.jpg);
+      background: url(./img/1.jpg);
       background-size: cover;
       background-position: center;
       /* Editei aki*/
