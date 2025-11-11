@@ -154,7 +154,7 @@
    }
 
    main h1 {
-      color: var(--branco);
+      color: black;
       /* font-family */
       font-family: "Koulen", sans-serif;
       font-size: 2rem;
@@ -163,7 +163,7 @@
    }
 
    main h2 {
-      color: var(--branco);
+      color: black;
       font-size: 19px;
       font-family: "Koulen", sans-serif;
       text-shadow: 0px 5px 10px var(--pao), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
@@ -596,7 +596,7 @@
 
       #cardapio span {
          display: inline;
-         color: red;
+         color: black;
       }
 
       #qrcode img {
