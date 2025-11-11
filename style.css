@@ -316,13 +316,14 @@
    }
 
    #produto .container {
-      flex-direction: column;
+      flex-direction: left;
       text-align: center;
       align-items: center;
    }
 
    .card img {
-      border-radius: 25px 25px 0px 0px;
+      border-radius: 25px 25px 25px 25px;
+      /* Borda arredondada cima cima, baixo baixo */
    }
 
    #produto .btn {
@@ -596,7 +597,8 @@
 
       #cardapio span {
          display: inline;
-         color: black;
+         color: var(--dourado);
+         font-weight: 900;
       }
 
       #qrcode img {
