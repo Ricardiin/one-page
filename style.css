@@ -59,7 +59,7 @@
    .card h2 {
       font-size: 1.3rem;
       color: rgb(2, 0, 0);
-      margin: 15px 0px;
+      margin: 5px 0px;
    }
 
    .card p {
@@ -83,8 +83,8 @@
    }
 
    .logo img {
-      width: 100px;
-      height: 100px;
+      width: 128px;
+      height: 128px;
 
    }
 
@@ -177,6 +177,11 @@
       background: url(./img/burg.jpg);
       background-size: cover;
       background-position: center;
+      /* Editei aki*/
+      background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 
    }
 
@@ -263,6 +268,11 @@
       background: url(./img/burg.jpg);
       background-size: cover;
       background-position: center;
+      /* editei aki */
+       background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
    }
 
    #cardapio .container {
@@ -292,7 +302,7 @@
       background-color: var(--pao);
 
       background-image: url(.img/pdf.png);
-      padding: 10px 20px;
+      padding: 10px 40px;
       color: black;
       border-radius: 30px;
       text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
@@ -330,14 +340,24 @@
       background-color: #fcbe5c;
    }
 
+   #produto h1{
+      text-align: center;
+      color: var(--dourado);
+   }
 
 
-
-
-   /* endereco */
+   /* endereço */
    address {
-      padding: 50px 0px;
-      background-color: var(--marrom);
+      /* Editiei aki tbm */ 
+      padding: 50px 10px;
+      background: url(./img/burg.jpg);
+      background-size: cover;
+      background-position: center;
+      /* Editei aki*/
+      background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
       color: #ffffff;
    }
 
