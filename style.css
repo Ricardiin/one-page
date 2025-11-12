@@ -70,6 +70,31 @@
       font-family: Arial;
    }
 
+   /* Rodapé */
+
+   footer {
+      padding: 25px 10px;
+      background-color: var(--seila);
+      color: var(--branco);
+      align-items: center;
+   }
+
+   #social {
+      margin-bottom: 25px;
+   }
+
+   #copyright a {
+      text-decoration: none;
+      color: var(--bege);
+   }
+
+   /* botão de subir */
+
+   #topo {
+      position: fixed;
+      bottom: 75px;
+      right: 15px;
+   }
 
 
    /* fim do layout*********************************/
@@ -387,7 +412,7 @@
    }
 
 
-   /*fim do Smartphone----------------------------- */
+   /*fim do Smartphone ----------------------------- */
 
    /* smartphone landscape ----------------------*/
    @media (min-width: 576px) {
@@ -459,10 +484,22 @@
          border-radius: 10px;
       }
 
+      /* rodapé */
+      .Flex5 {
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #social {
+         margin-bottom: 0px;
+      }
+
+
 
    }
 
-   /*fim do landscape----------------------------*/
+   /*fim do smartphone landscape----------------------------*/
 
    /* Tablet portrait -----------------------------*/
    @media (min-width: 768px) {
