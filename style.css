@@ -58,15 +58,16 @@
 
    .card h2 {
       font-size: 1.3rem;
-      color: rgb(2, 0, 0);
+      color: var(--dourado);
       margin: 5px 0px;
    }
 
    .card p {
-      color: var(--dourado);
+      color: white;
       font-family: 'Open Sans';
       text-align: center;
       padding: 0px 10px 30px 10px;
+      font-family: Arial;
    }
 
 
@@ -179,9 +180,9 @@
       background-position: center;
       /* Editei aki*/
       background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
    }
 
@@ -269,10 +270,10 @@
       background-size: cover;
       background-position: center;
       /* editei aki */
-       background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
    }
 
    #cardapio .container {
@@ -326,7 +327,10 @@
    }
 
    #produto .container {
-      flex-direction: column;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
       text-align: center;
       align-items: center;
    }
@@ -337,10 +341,10 @@
    }
 
    #produto .btn {
-      background-color: #fcbe5c;
+      background-color: var(--pao);
    }
 
-   #produto h1{
+   #produto h1 {
       text-align: center;
       color: var(--dourado);
    }
@@ -348,38 +352,38 @@
 
    /* endereço */
    address {
-      /* Editiei aki tbm */ 
       padding: 50px 10px;
       background: url(./img/1.jpg);
       background-size: cover;
       background-position: center;
-      /* Editei aki*/
       background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
       color: #ffffff;
-   }
-
-   address a {
-      text-decoration: none;
-      color: #ffffff;
-   }
-
-   address img {
-      padding-top: 15px;
    }
 
    address .container {
-      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
    }
 
+   /* contato e endereço lado esquerdo */
+   #contato,
    #endereco {
-      padding-bottom: 30px;
+      flex: 1;
+      min-width: 250px;
    }
 
+   /* mapa do Google à direita */
    #googlmaps iframe {
-      display: none;
+      display: block;
+      /* mostra o mapa */
+      width: 340px;
+      height: 300px;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
    }
 
 
@@ -453,6 +457,19 @@
          width: 530px;
          height: 250px;
          border-radius: 10px;
+      }
+
+      a.whatsapp {
+         color: white;
+         /* muda para a cor que quiser */
+         text-decoration: none;
+         /* remove o sublinhado */
+         font-weight: bold;
+      }
+
+      a.whatsapp:hover {
+         color: var(--pao);
+         /* cor ao passar o mouse */
       }
 
 
