@@ -344,7 +344,7 @@
       background-color: var(--pao);
    }
 
-   #produto h1 {
+   #produto h2 {
       text-align: center;
       color: var(--dourado);
    }
@@ -457,19 +457,6 @@
          width: 530px;
          height: 250px;
          border-radius: 10px;
-      }
-
-      a.whatsapp {
-         color: white;
-         /* muda para a cor que quiser */
-         text-decoration: none;
-         /* remove o sublinhado */
-         font-weight: bold;
-      }
-
-      a.whatsapp:hover {
-         color: var(--pao);
-         /* cor ao passar o mouse */
       }
 
 
