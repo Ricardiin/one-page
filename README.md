@@ -8,6 +8,11 @@ Site One-Page de uma Hamburgueria para Oferecer hambúrgueres artesanais com ing
 # Autor
 Ricardin
 
+
+# HTML
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fricardiin.github.io%2Fone-page%2F)
+
+
 # CSS
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
